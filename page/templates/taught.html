@@ -1,0 +1,8 @@
+<html>
+<h1> Lessons from everyone </h1>
+<ul>
+{% for instruction in instructions %}
+<li><a href="/teachme/?howtoid={{ instruction.id }}">{{ instruction.title }} by {{ instruction.author.username}}</a></li>
+{% endfor %}
+</ul>
+</html>

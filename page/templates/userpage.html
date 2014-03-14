@@ -1,0 +1,10 @@
+<html>
+<h1> {{ user.username }}'s Page </h1>
+<p> Date Joined: {{ user.dateJoined }} </p>
+<h3><u>Lessons:</u></h3>
+<ul>
+{% for instruction in instructions %}
+<li><a href="/teachme/?howtoid={{ instruction.id }}">{{ instruction.title }}</a></li>
+{% endfor %}
+</ul>
+</html>

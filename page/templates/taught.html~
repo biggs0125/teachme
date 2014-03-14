@@ -1,0 +1,7 @@
+<html>
+<ul>
+{% for instruction in instructions %}
+<li><a href="/lesson/?id={{ instruction.id }}">{{ instruction.title }}</a></li>
+{% endfor %}
+</ul>
+</html>

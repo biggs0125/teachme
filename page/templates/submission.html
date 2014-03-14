@@ -1,0 +1,11 @@
+<html>
+<h1> Instruction Submission </h1>
+<form action="/acceptSubmission/" method="post">
+{% csrf_token %}
+<u>Title</u><br>
+<input type="text" name="title"> <br> <br>
+Enter material below: <br>
+<textarea name="instructions"></textarea><br>
+<input type="submit" value="Publish">
+</form>
+</html>

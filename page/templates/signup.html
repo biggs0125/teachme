@@ -1,0 +1,13 @@
+<html>
+<h1> Signup For TeachMe </h1>
+<form action="/acceptSignup/" method="post">
+{% csrf_token %}
+<u>Username</u><br>
+<input type="text" name="username" autocomplete="off"><br><br>
+<u>Password</u><br>
+<input type="password" name="pass"><br><br>
+<u>Email</u><br>
+<input type="text" name="email" autocomplete="off"><br><br>
+<input type="submit" value="Submit"><br><br>
+</form>
+</html>

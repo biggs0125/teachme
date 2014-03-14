@@ -1,0 +1,11 @@
+<html>
+<h1> Login to TeachMe </h1>
+<form action="/acceptLogin/" method="post">
+{% csrf_token %}
+<u>Username or Email</u><br>
+<input type="text" name="username" autocomplete="off"><br><br>
+<u>Password</u><br>
+<input type="password" name="pass" autocomplete="off"><br><br>
+<input type="submit" value="Login">
+</form>
+</html>

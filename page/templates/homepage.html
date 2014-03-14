@@ -1,0 +1,14 @@
+<html>
+{% if logged_in %} 
+<h1> Hi, {{ username }} </h1> 
+<a href="/submission/">Make Submission</a><br>
+<a href="/{{ username }}">What You've Taught</a><br>
+<a href="/lessons/">See All Lessons</a><br>
+<a href="/logout/">Log Out</a><br>
+{% else %}
+<h1> You are not logged in! </h1>
+<a href="/login/">Login</a><br>
+<a href="/lessons/">See All Lessons</a><br>
+<a href="/signup/">Sign Up</a><br>
+{% endif %}
+</html>

@@ -1,0 +1,4 @@
+<html>
+<h1> Instruction Submission </h1>
+<form action="{% url 'page:home
+</html>
